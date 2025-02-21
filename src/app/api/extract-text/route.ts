@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ text: data.text });
   } catch (error) {
-    console.error('Error processing PDF:', error);s
+    console.error('Error processing PDF:', error);
     return NextResponse.json({ error: 'Error extracting text' }, { status: 500 });
   }
 }
